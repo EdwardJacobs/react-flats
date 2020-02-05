@@ -6,7 +6,11 @@ const FlatList = (props) => {
   const renderList = () => {
     return props.flats.map((flat) => {
       return (
-        <Flat flat={flat} />
+        <Flat
+        flat={flat}
+        key={flat.lat}
+        selectFlat={props.selectFlat}
+        />
       );
     });
   };
