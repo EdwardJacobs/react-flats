@@ -34,7 +34,7 @@ class App extends Component {
       <div className='container'>
         <FlatList
           flats={this.state.flats}
-          selectedFlat={this.selectedFlat}
+          selectedFlat={this.state.selectedFlat}
           selectFlat={this.selectFlat}
         />
         <div className='map-container'>
