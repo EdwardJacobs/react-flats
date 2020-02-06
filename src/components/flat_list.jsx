@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Flat from './flat';
 
 class FlatList extends Component {
@@ -11,7 +11,7 @@ class FlatList extends Component {
             key={flat.lat}
             index={index}
             selectFlat={this.props.selectFlat}
-            selected={flat.name === this.props.selectedFlat.name}
+            selected={flat.name == this.props.selectedFlat.name}
           />
         );
       });
